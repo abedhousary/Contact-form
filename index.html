@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="form-input">
+          <div class="title">Contact Us</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-input">
+          <div class="label">First Name <span class="star"> *</span></div>
+          <input type="text" class="input" name="FirstName" />
+          <div class="error" id="FirstName">This field is required</div>
+        </div>
+        <div class="form-input">
+          <div class="label">Last Name <span class="star"> *</span></div>
+          <input type="text" class="input" name="LastName" />
+          <div class="error" id="LastName">This field is required</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-input full">
+          <div class="label">Email Address<span class="star"> *</span></div>
+          <input type="text" class="input full" name="Email" />
+          <div class="error" id="Email">This field is required</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="radio-inputs">
+          <div class="label">Query Type<span class="star"> *</span></div>
+          <div class="radio-holder">
+            <input type="radio" class="radio" name="Radio" />
+            <div class="radio-title">General Enquiry</div>
+          </div>
+          <div class="error" id="Radio">Please select a query type</div>
+        </div>
+        <div class="radio-inputs">
+          <div class="label">&nbsp;</div>
+          <div class="radio-holder">
+            <input type="radio" class="radio" name="Radio" />
+            <div class="radio-title">Support Request</div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="height: 100px; margin-top: 20px">
+        <div class="form-input full">
+          <div class="label">Message<span class="star"> *</span></div>
+          <input
+            type="text"
+            class="input full"
+            style="height: 100px"
+            name="Message"
+          />
+          <div class="error" id="Message">This field is required</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="checkbox-holder">
+          <input type="checkbox" class="checkbox" name="Terms" value="off" />
+          <div class="message">
+            I consent to being contacted by the team<span class="star"> *</span>
+          </div>
+        </div>
+        <div class="error" id="Terms">
+          To submit this form, please consent to being contacted
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="submit">Submit</div>
+      </div>
+    </div>
+    <div class="message-box">
+      <div class="message-title">Message Sent!</div>
+      <div class="message-desc">
+        Thanks for completing the form. We'll be in touch soon!
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
